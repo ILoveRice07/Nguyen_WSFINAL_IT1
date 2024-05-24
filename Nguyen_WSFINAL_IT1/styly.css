@@ -1,0 +1,618 @@
+/* Tady jsem se zbavoval bilé čáry na levé straně stránky */
+html
+{
+  width:100%; 
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+body
+{ 
+  width:100%; 
+  height:100%; 
+  margin:0; 
+  padding:0;
+  background-color: #FBEAEB;
+}
+
+/* Navigační panel----------------------------*/
+.logo
+{
+  float: left;
+  margin-top: -50px;
+}
+ 
+a.nazev
+{
+  font-family: Hammersmith One;
+  float: left;
+  text-decoration: none;
+  color: white;
+  margin-top: -25px;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+
+li.panely
+{
+  display: inline;
+  font-family: Hammersmith One;
+  float: right;
+  position: relative;
+  margin-top: -25px;
+  font-size: 20px;
+}
+
+a.panely
+{
+  display: block;
+  padding: 8px;
+  background-color: #2F3C7E;
+}
+
+
+.navigacni-panely
+{
+  top: 0;
+  list-style: none;
+  margin: 0;
+  padding: 50px 0px;
+  background-color: #2F3C7E;
+  position: relative;
+  width: 100%;
+}
+  
+  
+li.panely a.panely
+{
+  display: block;
+  color: #FBEAEB;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.panely a.panely:hover
+{
+  background-color: gray;
+}
+
+.active
+{
+  background-color: #FBEAEB;
+}
+  
+/* Panel "Články"----------------------------*/
+.panel-clanky ul, .panel-clanky li
+{
+  margin: 0;
+  padding: 0;
+}
+
+.panel-clanky .navigacni-panely
+{
+  list-style: none;
+  width: 100%;
+}
+
+.panel-clanky li.panely
+{
+  width: auto;
+  margin-top: -25px;
+}
+
+.panel-clanky a.panely
+{
+  background: #2F3C7E;
+  color:white;
+  display: block;
+  font-family: Hammersmith One;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  width: 130px;
+  
+}
+
+#clanky
+{
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  list-style: none;
+  width: 82px;
+}
+
+li:hover ul#clanky 
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+#clanky li.panely 
+{
+  float: none;
+  width: 100px;
+}
+
+#clanky a.panely:hover 
+{
+  background: gray;
+}
+  
+#clanky a.panely 
+{
+  background-color:#495dc2;
+}
+
+/* Patička----------------------------*/
+main
+{
+  min-height: 100vh;
+  margin-bottom: -80px;
+}
+
+.push
+{
+ height: 180px
+}
+
+.paticka
+{
+  bottom: 0;
+  width: 100%;
+  background-color: #2F3C7E;
+  font-family: Hammersmith One;
+  color:white;
+  height: 150px;
+}
+
+ul#kontakty
+{
+  list-style: none; 
+  padding: 30px 50px;
+}
+
+ul#socialni-site
+{
+  float: right;
+  list-style: none;
+  margin-top: -120px;
+  padding: 0px 50px;
+}
+
+ul#copyright
+{
+  text-align: center;
+  margin-top: -150px;
+  list-style: none;
+}
+
+a.kontakty
+{
+  text-decoration: none;
+  color: white;
+}
+
+/* Obrázky Hlavní Stránky---------------------------*/
+img#Hl-Obrazek-1
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 320px;
+}
+
+
+img#Hl-Obrazek-2 
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: -140px;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 500px;
+  height: 320px;
+}
+
+img#Hl-Obrazek-3
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: -140px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 320px;
+}
+
+img#Hl-Obrazek-4
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: -540px;
+  margin-left: auto;
+  margin-right: 100px;
+  width: 500px;
+  height: 320px;
+}
+ 
+/* Nadpis Hlavní Stránky----------------------------*/
+h1.index
+{
+  font-family: Hammersmith One;
+  text-align: center;
+  color:gray;
+  padding: 10px 10px;
+  font-size: 50px;
+}
+
+/* Nadpis Stránky "O Nás"----------------------------*/
+h1.o-nas
+{
+  text-align: center;
+  font-family: Hammersmith One;
+  margin-top: 80px;
+  color:gray;
+  font-size: 50px;
+}
+
+/* Text Stránky "O Nás"----------------------------*/
+p.o-nas
+{
+  text-align: block;
+  font-family: sans-serif;
+  margin-left: 200px;
+  margin-right: auto;
+  margin-top: 40px;
+  color:gray;
+  padding: 10px 10px;
+  font-size: 30px;
+}
+
+/* Obrázek Stránky "O Nás"----------------------------*/
+img.o-nas
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 400px;
+}
+
+/* Nadpis Stránky "Kontakty"----------------------------*/
+h1.kontakty
+{
+  text-align: center;
+  font-family:Hammersmith One;
+  margin-top: 80px;
+  color:gray;
+  font-size: 50px;
+}
+
+/* Text Stránky "Kontakty"----------------------------*/
+ul.kontakty
+{
+  list-style: none;
+  color: gray;
+  font-size: 30px;
+  margin-left: 350px;
+  padding: 10px 10px;
+  margin-top: 140px;
+  font-family: sans-serif;
+}
+
+ul.socialni-site
+{
+  list-style: none;
+  color: gray;
+  font-size: 30px;
+  margin-left: 350px;
+  padding: 10px 10px;
+  margin-top: 80px;
+  font-family: sans-serif
+}
+
+img.kontakty
+{
+ height: 600px;
+ width: 500px;
+ margin-left: 1000px;
+ margin-top: -530px;
+}
+
+/* Nadpisy Stránky "Články" a Stránek Článků 1,2,3,4,5----------------------------*/
+h1.clanky
+{
+  text-align: center;
+  font-family:Hammersmith One;
+  margin-top: 80px;
+  color:gray;
+  font-size: 50px;
+}
+
+/* Text Stránky "Články" a Stránek Článků 1,2,3,4,5----------------------------*/
+h2.nadpis-clanku
+{
+  font-family: Hammersmith One;
+  color: gray;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+p.uvodnik
+{
+ font-family: sans-serif;
+ text-align: block;
+ margin-left: 600px;
+ margin-right: 600px;
+ color: gray;
+ font-size: 20px;
+}
+
+.hlavni-cast
+{
+  color: gray;
+  margin-right: 600px;
+  margin-left: 600px;
+}
+
+li.body
+{
+  margin-top:20px;
+  font-size: 35px;
+  font-family: Hammersmith One;
+}
+
+li.obsah-bodu
+{
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  list-style: disc;
+}
+
+p.zaver
+{
+ margin-top: 40px;
+ font-size: 20px;
+ font-family: sans-serif;
+}
+
+/* Úprava Odkazů Ve Stránce "Články"----------------------------*/
+a.odkaz-clanku
+{
+  font-family: Hammersmith One;
+  text-decoration: none;
+  color: gray;
+  margin-left: 600px;
+  font-size: 20px
+}
+
+/* Nadpis Galerie----------------------------*/
+h1.galerie
+{
+  text-align: center;
+  font-family:Hammersmith One;
+  margin-top: 80px;
+  color:gray;
+  font-size: 50px;
+}
+
+/* Text a Obrázky v Galerii----------------------------*/
+.obrazky-a-text
+{
+  color: gray;
+}
+
+h2.krajiny
+{
+  font-family: Hammersmith One;
+  text-align: center;
+  font-size: 35px;
+}
+
+h2.vesnice-mesta
+{
+  font-family: Hammersmith One;
+  text-align: center;
+  font-size: 35px;
+}
+
+h2.zvirata
+{
+  font-family: Hammersmith One;
+  text-align: center;
+  font-size: 35px;
+}
+
+h2.portrety
+{
+  font-family: Hammersmith One;
+  text-align: center;
+  font-size: 35px;
+}
+
+p.krajiny
+{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p.vesnice-mesta
+{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+p.zvirata
+{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+p.portrety
+{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+img.obrazek-krajiny-jedna
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 500px;
+  height: 320px;
+}
+
+img.obrazek-krajiny-dva
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: -340px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 320px;
+}
+
+img.obrazek-krajiny-tri
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  float: right;
+  margin-top: -340px;
+  margin-right: 100px;
+  width: 500px;
+  height: 320px;
+}
+
+img.obrazek-vesnice-mesta-jedna
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 500px;
+  height: 320px;
+}
+
+img.obrazek-vesnice-mesta-dva
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: -340px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 620px;
+}
+
+img.obrazek-vesnice-mesta-tri
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  float: right;
+  margin-top: -340px;
+  margin-right: 100px;
+  width: 500px;
+  height: 320px;
+}
+
+img.obrazek-zvirata-jedna
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 500px;
+  height: 320px;
+}
+
+img.obrazek-zvirata-dva
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: -340px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 520px;
+}
+
+img.obrazek-zvirata-tri
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  float: right;
+  margin-top: -640px;
+  margin-right: 100px;
+  width: 500px;
+  height: 620px;
+}
+
+img.obrazek-portrety-jedna
+{ 
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-right: auto;
+  width: 500px;
+  height: 320px;
+}
+
+img.obrazek-portrety-dva
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin-top: -340px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 520px;
+}
+
+img.obrazek-portrety-tri
+{
+  display: block;
+  padding: 10px 10px;
+  border-radius: 30px;
+  float: right;
+  margin-top: -340px;
+  margin-right: 100px;
+  width: 500px;
+  height: 320px;
+}
